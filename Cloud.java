@@ -7,6 +7,6 @@ public class Cloud
 		array[1] = new Ball(x - 15, y - 5, 30, "WHITE");
 		array[2] = new Ball(x + 10, y + 5, 30, "WHITE");
 		for (int i = 0; i < 3; i++)
-			arena.addBall(array[0]);
+			arena.addBall(array[i]);
 	}
 }
