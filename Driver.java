@@ -27,6 +27,7 @@ public class Driver
 			arena.move();
 			arena.pause();
 			b.arcMove();
+			bg.change();
 		}
 	}
 }
