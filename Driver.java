@@ -14,8 +14,8 @@ public class Driver
 		arena.addBall(b);
 		grass = new Rectangle(640, 720, 1280, 3, "GREEN");
 		arena.addRectangle(grass);
-		s1 = new Sheep(640, 705, 30, 100, "WHITE");
-		s2 = new Sheep(300, 705, 20, 120, "GREY");
+		s1 = new Sheep(640, 705, 100, 30, "WHITE");
+		s2 = new Sheep(300, 705, 120, 20, "GREY");
 		arena.addRectangle(s1);
 		arena.addRectangle(s2);
 
