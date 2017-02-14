@@ -2,6 +2,7 @@ public class Driver
 {
 
 	public static Ball b;
+	public static Rectangle grass;
 
 	public static void main(String[] args)
 	{
@@ -14,5 +15,9 @@ public class Driver
 			arena.move(b);
 			arena.pause();
 		}
+		
+		grass = new Rectangle(640, 720, 1280, 15, "GREEN");
+		arena.addRectangle(grass);
+		
 	}
 }
