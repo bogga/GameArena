@@ -25,7 +25,7 @@ public class Driver
 		{
 			arena.move();
 			arena.pause();
-			b.move();
+			b.arcMove();
 		}
 	}
 }
