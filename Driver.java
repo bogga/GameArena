@@ -1,7 +1,7 @@
 public class Driver
 {
 
-	public static Ball b;
+	public static Sun b;
 	public static Rectangle grass;
 	public static Sheep s1;
 	public static Sheep s2;
@@ -9,7 +9,7 @@ public class Driver
 	public static void main(String[] args)
 	{
 		IntArena arena = new IntArena(1280, 720);
-		b = new Ball(640, 360, 100, "ORANGE");
+		b = new Sun();
 
 		arena.addBall(b);
 		grass = new Rectangle(640, 720, 1280, 30, "GREEN");
@@ -25,6 +25,7 @@ public class Driver
 		{
 			arena.move();
 			arena.pause();
+			b.move();
 		}
 	}
 }
