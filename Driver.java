@@ -19,7 +19,9 @@ public class Driver
 		arena.addRectangle(s1);
 		arena.addRectangle(s2);
 
-		Cloud c = new Cloud(640, 100, arena);		
+		Cloud c = new Cloud(640, 100, arena);
+		Cloud c1 = new Cloud(320, 90, arena);
+		Cloud c2 = new Cloud(200, 110, arena);
 
 		while ("hell" != "frozen")
 		{
