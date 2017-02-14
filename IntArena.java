@@ -16,12 +16,12 @@ public class IntArena extends GameArena
 	public void move()
 	{
 		if (upPressed())
-			Driver.b.setYPosition(getYPosition() - speed);
+			Driver.b.setYPosition(b.getYPosition() - speed);
 		if (downPressed())
-			Driver.b.setYPosition(getYPosition() + speed);
+			Driver.b.setYPosition(b.getYPosition() + speed);
 		if (leftPressed())
-			Driver.b.setXPosition(getXPosition() - speed);
+			Driver.b.setXPosition(b.getXPosition() - speed);
 		if (rightPressed())
-			Driver.b.setXPosition(getXPosition() + speed);
+			Driver.b.setXPosition(b.getXPosition() + speed);
 	}
 }
