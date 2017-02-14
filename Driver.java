@@ -19,6 +19,8 @@ public class Driver
 		arena.addRectangle(s1);
 		arena.addRectangle(s2);
 
+		Cloud c = new Cloud(640, 100, arena);		
+
 		while ("hell" != "frozen")
 		{
 			arena.move();
