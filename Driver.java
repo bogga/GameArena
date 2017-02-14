@@ -9,7 +9,7 @@ public class Driver
 	public static void main(String[] args)
 	{
 		IntArena arena = new IntArena(1280, 720);
-		b = new Ball(640, 360, 20, "MAGENTA");
+		b = new Ball(640, 360, 100, "ORANGE");
 
 		arena.addBall(b);
 		grass = new Rectangle(640, 720, 1280, 30, "GREEN");
