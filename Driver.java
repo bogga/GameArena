@@ -11,7 +11,7 @@ public class Driver
 		arena.addBall(b);
 		while ("hell" != "frozen")
 		{
-			arena.move(b);
+			arena.move();
 			arena.pause();
 		}
 	}
