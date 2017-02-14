@@ -8,6 +8,8 @@ public class Sun extends Ball
 	}
 
 	private static int speed = 1;
+	public static double firstYSpeed = 1;
+	public static double ySpeed = firstYSpeed;
 
 	public int getSpeed()
 	{
@@ -27,9 +29,14 @@ public class Sun extends Ball
 
 	public void arcMove()
 	{
-		setYPosition((getXPosition() * (getXPosition() - 1380)) + 720);
 		setXPosition(getXPosition() + getSpeed());
+		setYPosition(getYPosition() - ySpeed);
+		ySpeed = ySpeed - 0.0014;
 		if (getXPosition() > 1380)
-			setXPosition(-100);
+			{
+				ySpeed = firstYSpeed;
+				setXPosition(-100);
+				setYPosition(720);
+			}
 	}
 }
