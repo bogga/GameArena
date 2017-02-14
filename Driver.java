@@ -12,7 +12,7 @@ public class Driver
 		b = new Ball(640, 360, 20, "MAGENTA");
 
 		arena.addBall(b);
-		grass = new Rectangle(640, 720, 1280, 3, "GREEN");
+		grass = new Rectangle(640, 720, 1280, 30, "GREEN");
 		arena.addRectangle(grass);
 		s1 = new Sheep(640, 705, 100, 30, "WHITE");
 		s2 = new Sheep(300, 705, 120, 20, "GREY");
