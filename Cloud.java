@@ -6,6 +6,8 @@ public class Cloud
 	public static Random rand = new Random();
 	public static String col;
 
+	public int x, y;
+
 	public Cloud(int x, int y, GameArena arena)
 	{
 		if (rand.nextBoolean())
@@ -19,4 +21,5 @@ public class Cloud
 		for (int i = 0; i < 3; i++)
 			arena.addBall(array[i]);
 	}
+
 }
