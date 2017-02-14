@@ -14,11 +14,11 @@ public class Driver
 		arena.addBall(b);
 		grass = new Rectangle(640, 720, 1280, 3, "GREEN");
 		arena.addRectangle(grass);
-		s1 = new Sheep(640, 705, 60, 100, "WHITE");
-		s2 = new Sheep(300, 705, 70, 120, "GREY");
+		s1 = new Sheep(640, 705, 30, 100, "WHITE");
+		s2 = new Sheep(300, 705, 20, 120, "GREY");
 		arena.addRectangle(s1);
 		arena.addRectangle(s2);
-		
+
 		while ("hell" != "frozen")
 		{
 			arena.move();
