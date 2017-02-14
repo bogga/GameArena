@@ -10,6 +10,7 @@ public class Driver
 	{
 		IntArena arena = new IntArena(1280, 720);
 		b = new Sun();
+		Background bg = new Background(arena);
 
 		arena.addBall(b);
 		grass = new Rectangle(640, 720, 1280, 30, "GREEN");

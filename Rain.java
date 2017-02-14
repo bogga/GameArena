@@ -6,6 +6,8 @@ public class Rain
 	public static String col = "BLUE";
 	public static Rectangle[] array;
 
+	// TERRIBLE CLASS - REDO
+
 	public Rain(Cloud cloud, GameArena arena)
 	{
 		array = new Rectangle[3];
