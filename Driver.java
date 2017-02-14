@@ -3,6 +3,8 @@ public class Driver
 
 	public static Ball b;
 	public static Rectangle grass;
+	public static Sheep s1;
+	public static Sheep s2;
 
 	public static void main(String[] args)
 	{
@@ -12,6 +14,9 @@ public class Driver
 		arena.addBall(b);
 		grass = new Rectangle(640, 720, 1280, 3, "GREEN");
 		arena.addRectangle(grass);
+		s1 = new Sheep(640, 705, 60, 100, "WHITE");
+		s2 = new Sheep(300, 705, 70, 120, "GREY");
+		
 		while ("hell" != "frozen")
 		{
 			arena.move();
