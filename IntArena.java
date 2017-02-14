@@ -13,16 +13,15 @@ public class IntArena extends GameArena
 		super(x, y);
 	}
 
-	/* public void move(Ball entity)
+	public void move()
 	{
 		if (upPressed())
-			Driver.entity.setYPosition(getYPosition() - speed);
+			Driver.b.setYPosition(getYPosition() - speed);
 		if (downPressed())
-			Driver.entity.setYPosition(getYPosition() + speed);
+			Driver.b.setYPosition(getYPosition() + speed);
 		if (leftPressed())
-			Driver.entity.setXPosition(getXPosition() - speed);
+			Driver.b.setXPosition(getXPosition() - speed);
 		if (rightPressed())
-			Driver.entity.setXPosition(getXPosition() + speed);
+			Driver.b.setXPosition(getXPosition() + speed);
 	}
-	*/
 }
