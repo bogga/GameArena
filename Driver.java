@@ -16,6 +16,8 @@ public class Driver
 		arena.addRectangle(grass);
 		s1 = new Sheep(640, 705, 60, 100, "WHITE");
 		s2 = new Sheep(300, 705, 70, 120, "GREY");
+		arena.addRectangle(s1);
+		arena.addRectangle(s2);
 		
 		while ("hell" != "frozen")
 		{
