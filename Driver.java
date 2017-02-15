@@ -30,7 +30,7 @@ public class Driver
 			//bg.change();
 			c.move(0); //CLOUD CLASS IS WRONG - FIX
 			c1.move(1);
-			//c2.move(2);
+			c2.move(2);
 		}
 	}
 }

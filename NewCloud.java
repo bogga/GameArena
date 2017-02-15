@@ -15,7 +15,7 @@ public class NewCloud
 			col = "WHITE";
 		else
 			col = "GRAY";
-		array = new Ball[3];
+		array = new Ball[600];
 		array[(3 * num)] = new Ball(x, y, 50, col);
 		array[(3 * num) + 1] = new Ball(x - 50, y - 5, 30, col);
 		array[(3 * num) + 2] = new Ball(x + 50, y + 10, 30, col);
@@ -24,18 +24,17 @@ public class NewCloud
     num++;
   }
 
-  public void move(int num)
+  public void move(int input)
 	{
-		array[(3 * num)].setXPosition(array[(3 * num)].getXPosition() + speed);
-    array[(3 * num) + 1].setXPosition(array[(3 * num) + 1].getXPosition() + speed);
-    array[(3 * num) + 2].setXPosition(array[(3 * num) + 2].getXPosition() + speed);
+		array[(3 * input)].setXPosition(array[(3 * input)].getXPosition() + speed);
+    array[(3 * input) + 1].setXPosition(array[(3 * input) + 1].getXPosition() + speed);
+    array[(3 * input) + 2].setXPosition(array[(3 * input) + 2].getXPosition() + speed);
 
-
-		if (array[1].getXPosition() > 1380)
+		if (array[(3 * input) + 1].getXPosition() > 1380)
 		{
-			array[(3 * num)].setXPosition(-50);
-			array[(3 * num) + 1].setXPosition(-100);
-			array[(3 * num) + 2].setXPosition(0);
+			array[(3 * input)].setXPosition(-50);
+			array[(3 * input) + 1].setXPosition(-100);
+			array[(3 * input) + 2].setXPosition(0);
 		}
 	}
 }
