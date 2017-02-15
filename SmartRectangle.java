@@ -7,9 +7,4 @@ public class SmartRectangle extends Rectangle
 	{
 		super(x, y, w, h, col);
 	}
-
-	public void changeColour(String newCol)
-	{
-		col = newCol;
-	}
 }

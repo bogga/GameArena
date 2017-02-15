@@ -1,9 +1,12 @@
+import javafx.scene.paint.*;
+
 public class Background
 {
 
 	public SmartRectangle r;
-	public int col = 003366;
-	public int colCopy = col;
+	int i = 0;
+	//public int col = 003366;
+	public Color col = Color.web("003366");
 
 	public Background(GameArena arena)
 	{
@@ -11,23 +14,22 @@ public class Background
 		arena.addRectangle(r);
 	}
 
-	// GET JOE TO ADD changeColour method
-	// this is trash
-	/* public void change()
+	public void change()
 	{
-		col = colCopy;
 		if (Driver.b.getXPosition() == -100)
-			col = 003366;
-		else if (Driver.b.getXPosition() < 640)
+			col = Color.web("003366");
+		else if (Driver.b.getXPosition() < 640 && i == 300)
 		{
-			//r.changeColour();
-			col = (col & 0x7f7f7f) >> 1;
+			col = col.brighter();
+			i = 0;
 		}
-		else if (Driver.b.getXPosition() < 1380)
-			col = (col & 0xfefefe) << 1;
-		colCopy = col;
-		col.toString();
-		r.changeColour(col);
+		else if (Driver.b.getXPosition() < 1380 && i == 300)
+		{
+				col = col.darker();
+				i = 0;
+		}
+		r.changeColour(col.toString());
+		i++;
 	}
-	*/
+
 }
