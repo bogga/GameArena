@@ -28,9 +28,9 @@ public class Rectangle
 	 * @return the X coordinate of this Rectangle within the GameArena.
 	 */
 
-	public void changeColour(String new)
+	public void changeColour(String newC)
 	{
-		colour = new;
+		colour = newC;
 	}
 
 	public double getXPosition()
