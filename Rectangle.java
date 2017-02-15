@@ -1,22 +1,22 @@
 /**
- * Models a simple, solid rectangle. 
+ * Models a simple, solid rectangle.
  * This class represents a Rectabgle object. When combined with the GameArena class,
  * instances of the Rectangle class can be displayed on the screen.
  */
-public class Rectangle 
+public class Rectangle
 {
 	// The following instance variables define the
 	// information needed to represent a Rectangle
-	// Feel free to more instance variables if you think it will 
-	// support your work... 
-	
+	// Feel free to more instance variables if you think it will
+	// support your work...
+
 	private double xPosition;			// The X coordinate of centre of this Rectangle
 	private double yPosition;			// The Y coordinate of centre of this Rectangle
 	private double width;				// The width of this Rectangle
 	private double height;				// The height of this Rectangle
 	private String colour = "WHITE";	// The colour of this Rectangle
 
-										// Permissable colours are 8 bit hexadecimal 
+										// Permissable colours are 8 bit hexadecimal
                                         // RGB values in the format #RRGGBB. e.g.
                                         //
                                         // Pure red is FF0000
@@ -27,6 +27,12 @@ public class Rectangle
 	 * Obtains the current position of this Rectangle.
 	 * @return the X coordinate of this Rectangle within the GameArena.
 	 */
+
+	public void changeColour(String new)
+	{
+		colour = new;
+	}
+
 	public double getXPosition()
 	{
 		return xPosition;
@@ -93,5 +99,5 @@ public class Rectangle
 		width = w;
 		height = h;
 		colour = col;
-	}	
+	}
 }
