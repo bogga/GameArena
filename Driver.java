@@ -18,9 +18,9 @@ public class Driver
 		s1 = new Sheep(640, 705, 100, 30, "WHITE", arena);
 		s2 = new Sheep(300, 705, 120, 20, "GREY", arena);
 
-		Cloud c = new Cloud(640, 100, arena, 0);
-		Cloud c1 = new Cloud(150, 90, arena, 1);
-		Cloud c2 = new Cloud(1000, 110, arena, 2);
+		Cloud c = new Cloud(640, 100, arena);
+		Cloud c1 = new Cloud(150, 90, arena);
+		Cloud c2 = new Cloud(1000, 110, arena);
 
 		while ("hell" != "frozen")
 		{
@@ -28,9 +28,9 @@ public class Driver
 			arena.pause();
 			b.arcMove();
 			//bg.change();
-			c.move(0);
-			c1.move(1);
-			c2.move(2);
+			c.move();
+			c1.move();
+			c2.move();
 		}
 	}
 }

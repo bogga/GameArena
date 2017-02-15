@@ -3,45 +3,46 @@ import java.util.Random;
 public class Cloud
 {
 
-	private static Random rand = new Random();
-	public static String col;
+	private Random rand = new Random();
+	public String col;
 	public static Ball array[] = new Ball[600];
 	public static double speed = -0.5;
-	public static int id = 0;
+	public int id = Cloud.nextId++;
+	private static int nextId = 0;
 
 	public int x, y;
 
-	public Cloud(int x, int y, GameArena arena, int inID)
+	public Cloud(int x, int y, GameArena arena)
 	{
 		if (rand.nextBoolean())
 			col = "WHITE";
 		else
 			col = "GRAY";
-		array[3 * inID] = new Ball(x, y, 50, col);
-		array[(3 * inID) + 1] = new Ball(x - 50, y - 5, 30, col);
-		array[(3 * inID) + 2] = new Ball(x + 50, y + 10, 30, col);
+		array[3 * id] = new Ball(x, y, 50, col);
+		array[(3 * id) + 1] = new Ball(x - 50, y - 5, 30, col);
+		array[(3 * id) + 2] = new Ball(x + 50, y + 10, 30, col);
 		for (int i = 0; i < 3; i++)
-			arena.addBall(array[(3 * inID) + i]);
+			arena.addBall(array[(3 * id) + i]);
 	}
 
-	public void move(int input)
+	public void move()
 	{
-		array[3 * input].setXPosition(array[3 * input].getXPosition() + speed);
-		array[(3 * input) + 1].setXPosition(array[(3 * input) + 1].getXPosition() + speed);
-		array[(3 * input) + 2].setXPosition(array[(3 * input) + 2].getXPosition() + speed);
+		array[3 * id].setXPosition(array[3 * id].getXPosition() + speed);
+		array[(3 * id) + 1].setXPosition(array[(3 * id) + 1].getXPosition() + speed);
+		array[(3 * id) + 2].setXPosition(array[(3 * id) + 2].getXPosition() + speed);
 
-		if (array[(3 * input) + 1].getXPosition() > 1380)
+		if (array[(3 * id) + 1].getXPosition() > 1380)
 		{
-			array[3 * input].setXPosition(-100);
-			array[(3 * input) + 1].setXPosition(-150);
-			array[(3 * input) + 2].setXPosition(-50);
+			array[3 * id].setXPosition(-100);
+			array[(3 * id) + 1].setXPosition(-150);
+			array[(3 * id) + 2].setXPosition(-50);
 		}
 
-		if (array[(3 * input) + 2].getXPosition() < -100)
+		if (array[(3 * id) + 2].getXPosition() < -100)
 		{
-			array[3 * input].setXPosition(1380);
-			array[(3 * input) + 1].setXPosition(1330);
-			array[(3 * input) + 2].setXPosition(1430);
+			array[3 * id].setXPosition(1380);
+			array[(3 * id) + 1].setXPosition(1330);
+			array[(3 * id) + 2].setXPosition(1430);
 		}
 	}
 }
