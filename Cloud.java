@@ -6,7 +6,7 @@ public class Cloud
 	private static Random rand = new Random();
 	public static String col;
 	public static Ball array[] = new Ball[600];
-	public static double speed = -5;
+	public static double speed = -0.5;
 	public static int id = 0;
 
 	public int x, y;
