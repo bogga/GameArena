@@ -22,6 +22,8 @@ public class Driver
 		Cloud c1 = new Cloud(150, 90, arena);
 		Cloud c2 = new Cloud(1000, 110, arena);
 
+		Fence f1 = new Fence(400, 705, 30, 150, "#a3734e", arena);
+
 		while ("hell" != "frozen")
 		{
 			arena.pause();
