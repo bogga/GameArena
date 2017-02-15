@@ -4,6 +4,7 @@ public class Background
 {
 
 	public SmartRectangle r;
+	int i = 0;
 	//public int col = 003366;
 	public Color col = Color.web("003366");
 
@@ -17,13 +18,18 @@ public class Background
 	{
 		if (Driver.b.getXPosition() == -100)
 			col = Color.web("003366");
-		else if (Driver.b.getXPosition() < 640)
+		else if (Driver.b.getXPosition() < 640 && i == 300)
 		{
 			col = col.brighter();
+			i = 0;
 		}
-		else if (Driver.b.getXPosition() < 1380)
-			col = col.darker();
+		else if (Driver.b.getXPosition() < 1380 && i == 300)
+		{
+				col = col.darker();
+				i = 0;
+		}
 		r.changeColour(col.toString());
+		i++;
 	}
 
 }
