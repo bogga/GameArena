@@ -10,10 +10,10 @@ public class Background
 		r = new SmartRectangle(640, 360, 1280, 720, "003366");
 		arena.addRectangle(r);
 	}
-	
+
 	// GET JOE TO ADD changeColour method
 	// this is trash
-	public void change()
+	/* public void change()
 	{
 		col = colCopy;
 		if (Driver.b.getXPosition() == -100)
@@ -29,4 +29,5 @@ public class Background
 		col.toString();
 		r.changeColour(col);
 	}
+	*/
 }

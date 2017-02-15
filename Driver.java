@@ -27,7 +27,8 @@ public class Driver
 			arena.move();
 			arena.pause();
 			b.arcMove();
-			bg.change();
+			//bg.change();
+			c.move(); //CLOUD CLASS IS WRONG - FIX
 		}
 	}
 }
