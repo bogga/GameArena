@@ -11,6 +11,7 @@ public class IntArena extends GameArena
 	public IntArena(int x, int y)
 	{
 		super(x, y);
+		changeTitle("Sleep Simulator 2018");
 	}
 
 	public void move()
