@@ -28,7 +28,7 @@ public class Driver
 		{
 			arena.pause();
 			b.arcMove();
-			//bg.change();
+			bg.change();
 			c.move();
 			c1.move();
 			c2.move();
