@@ -23,12 +23,8 @@ public class Driver
 		Cloud c2 = new Cloud(1000, 110, arena);
 
 		Fence gate = new Fence(750, 705, 30, 150, "#a3734e", arena);
-		/*
-		'Not too sure what this is below vvvvv'
-<<<<<<< HEAD
-=======
->>>>>>> 4a9fe9c7c33bc7c5d40a3a54d06a7e1af7ed3e66
-*/
+		arena.addRectangle(gate);
+
 		while ("hell" != "frozen")
 		{
 			arena.pause();

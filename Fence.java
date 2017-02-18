@@ -1,20 +1,45 @@
-public class Fence extends Sun
+public class Fence extends Rectangle
 {
 	private int x;
 	private int y;
 	private int w;
 	private int h;
+	private int speed = 5;
 
 	public Fence(int x, int y, int w, int h, java.lang.String col, GameArena arena)
 	{
 
-		Rectangle gate = new Rectangle(x, y, w, h, col);
-		arena.addRectangle(gate);
-		Ball post = new Ball(x, y-75, 17, "YELLOW");
-		arena.addBall(post);
+		super(x, y, w, h, col);
+		// arena.addRectangle(r);
+		// Ball post = new Ball(x, y-75, 17, "YELLOW");
+		// arena.addBall(post);
 	}
-public void move(){
-	
-}
+
+  /*
+	public int getXPosition()
+	{
+		return x;
+	}
+
+	public void setXPosition(int newX)
+	{
+		x = newX;
+	}
+	*/
+
+	public int getSpeed()
+	{
+		return speed;
+	}
+
+	public void setSpeed(int newS)
+	{
+		speed = newS;
+	}
+
+	public void move()
+	{
+		setXPosition(getXPosition() - getSpeed());
+	}
 
 }
