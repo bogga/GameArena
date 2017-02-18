@@ -5,6 +5,7 @@ public class Fence extends Rectangle
 	private int w;
 	private int h;
 	private int speed = 5;
+	private int numFences = 0;
 
 	public Fence(int x, int y, int w, int h, java.lang.String col, GameArena arena)
 	{

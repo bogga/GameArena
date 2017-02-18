@@ -40,19 +40,15 @@ public class IntArena extends GameArena
 	}
 
 	/**
-	* Checks for engagement of the movement keys and moves the Ball instance appropriately.
+	* Checks for engagement of the jump key and moves the Sheep instance appropriately.
 	*
 	*/
 
-	public void move()
+	// needs to be revamped for Sheep update() method
+	public void jump()
 	{
 		if (upPressed())
 			Driver.b.setYPosition(Driver.b.getYPosition() - speed);
-		if (downPressed())
-			Driver.b.setYPosition(Driver.b.getYPosition() + speed);
-		if (leftPressed())
-			Driver.b.setXPosition(Driver.b.getXPosition() - speed);
-		if (rightPressed())
-			Driver.b.setXPosition(Driver.b.getXPosition() + speed);
+
 	}
 }
