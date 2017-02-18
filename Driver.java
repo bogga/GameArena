@@ -15,8 +15,8 @@ public class Driver
 		arena.addBall(b);
 		grass = new Rectangle(640, 720, 1280, 30, "GREEN");
 		arena.addRectangle(grass);
-		s1 = new Sheep(640, 705, 100, 30, "WHITE", arena);
-		s2 = new Sheep(300, 705, 120, 20, "GREY", arena);
+		s1 = new Sheep(640, 650, 100, 30, "WHITE", arena);
+		s2 = new Sheep(300, 650, 120, 20, "GREY", arena);
 
 		Cloud c = new Cloud(640, 100, arena);
 		Cloud c1 = new Cloud(150, 90, arena);
