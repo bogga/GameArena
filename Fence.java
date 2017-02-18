@@ -42,7 +42,7 @@ public class Fence extends Rectangle
 		speed = newS;
 	}
 
-	int increment = 0;
+	private int increment = 0;
 	public void move()
 	{
 		setXPosition(getXPosition() - getSpeed());

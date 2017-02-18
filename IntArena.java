@@ -48,6 +48,6 @@ public class IntArena extends GameArena
 	public void jump()
 	{
 		if (upPressed())
-			Driver.b.setYPosition(Driver.b.getYPosition() - speed);
+			Driver.s2.update(5);
 	}
 }
