@@ -22,6 +22,11 @@ public class Sheep
 		return y;
 	}
 
+	public void setYPosition(int newY)
+	{
+		y = newY;
+	}
+
 	public Sheep(int inX, int inY, int w, int h, java.lang.String col, GameArena arena)
 	{
 		x = inX;
@@ -56,6 +61,7 @@ public class Sheep
 
 	public void update(int y)
 	{
+		setYPosition(y);
 		head.setYPosition(y - (height/2));
 		legBack.setYPosition(y + 30);
 		legFront.setYPosition(y + 30);
