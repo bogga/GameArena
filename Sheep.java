@@ -15,22 +15,31 @@ public class Sheep
 
 	private int height;
 
-	public Sheep(int x, int y, int w, int h, java.lang.String col, GameArena arena)
+	private int x, y;
+
+	public int getYPosition()
 	{
+		return y;
+	}
+
+	public Sheep(int inX, int inY, int w, int h, java.lang.String col, GameArena arena)
+	{
+		x = inX;
+		y = inY;
 		if (rand.nextBoolean())
 			col = "WHITE";
 		else
 			col = "GRAY";
-		head = new Ball(x+50, y-(h/2), 20, "PINK");
-		headCover = new Ball(x+60, y-(h/2)+8, 7, "PINK"); //headCover is to make it so facial features can be created
-		mouth = new Ball(x+60, y-(h/2)+10, 7, "BLACK");    //i.e. a mouth by using a headCover and a black Ball
-		eyer = new Ball(x+53, y-(h/2), 3, "BLACK");
-		eyel = new Ball(x+58, y-(h/2), 3, "BLACK");
-		arse = new Ball(x-40, y, 25, col);
-		abdomen = new Ball(x, y, 40, col);
-		neck = new Ball(x+40, y, 20, col);
-		legBack = new Rectangle(x-30, y+30, 10, 50, "BLACK");
-		legFront = new Rectangle(x+30, y+30, 10, 50, "BLACK");
+		head = new Ball(inX+50, inY-(h/2), 20, "PINK");
+		headCover = new Ball(inX+60, inY-(h/2)+8, 7, "PINK"); //headCover is to make it so facial features can be created
+		mouth = new Ball(inX+60, inY-(h/2)+10, 7, "BLACK");    //i.e. a mouth by using a headCover and a black Ball
+		eyer = new Ball(inX+53, inY-(h/2), 3, "BLACK");
+		eyel = new Ball(inX+58, inY-(h/2), 3, "BLACK");
+		arse = new Ball(inX-40, inY, 25, col);
+		abdomen = new Ball(inX, inY, 40, col);
+		neck = new Ball(inX+40, inY, 20, col);
+		legBack = new Rectangle(inX-30, inY+30, 10, 50, "BLACK");
+		legFront = new Rectangle(inX+30, inY+30, 10, 50, "BLACK");
 
 		arena.addRectangle(legBack);
 		arena.addRectangle(legFront);

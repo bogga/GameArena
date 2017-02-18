@@ -39,15 +39,22 @@ public class IntArena extends GameArena
 		changeTitle("Sleep Simulator 2018");
 	}
 
+	private Boolean jumping = false;
+
 	/**
 	* Checks for engagement of the jump key and moves the Sheep instance appropriately.
 	*
 	*/
 
-	// needs to be revamped for Sheep update() method
 	public void jump()
 	{
-		if (upPressed())
-			Driver.s2.update(5);
+		if (upPressed() && !jumping)
+		{
+			for (int i = 5; i < -5; i--)
+				Driver.s2.update(i);
+			jumping = true;
+		}
+		if (Driver.s2.getYPosition() >= 650)
+			jumping = false;
 	}
 }
