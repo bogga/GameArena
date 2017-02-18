@@ -9,10 +9,14 @@ public Sheep(int x, int y, int w, int h, java.lang.String col, GameArena arena){
 	else
 		col = "GRAY";
 	Ball head = new Ball(x+50, y-(h/2), 20, "PINK");
+	Ball eyer = new Ball(x+42, y-(h/2), 3, "BLACK");
+	Ball eyel = new Ball(x+58, y-(h/2), 3, "BLACK");
 	Rectangle body = new Rectangle(x, y, w, h, col);
 	arena.addRectangle(body);
 	arena.addBall(head);
-	
+	arena.addBall(eyel);
+	arena.addBall(eyer);
+
 }
 
 }
