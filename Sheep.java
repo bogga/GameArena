@@ -10,8 +10,8 @@ public Sheep(int x, int y, int w, int h, java.lang.String col, GameArena arena){
 	else
 		col = "GRAY";
 	Ball head = new Ball(x+50, y-(h/2), 20, "PINK");
-	Ball headCover = new Ball(x+50, y-(h/2)+7, 7, "PINK");
-	Ball mouth = new Ball(x+50, y-(h/2)+9, 7, "BLACK");
+	Ball headCover = new Ball(x+50, y-(h/2)+7, 7, "PINK"); //headCover is to make it so facial features can be created
+	Ball mouth = new Ball(x+50, y-(h/2)+9, 7, "BLACK");    //i.e. a moth by using a headCover and a black Ball
 	Ball eyer = new Ball(x+42, y-(h/2), 3, "BLACK");
 	Ball eyel = new Ball(x+58, y-(h/2), 3, "BLACK");
 	Ball arse = new Ball(x-40, y, 25, col);
