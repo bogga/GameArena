@@ -41,6 +41,8 @@ public class Fence extends Rectangle
 	public void move()
 	{
 		setXPosition(getXPosition() - getSpeed());
+		if (getXPosition() < (0 - (getWidth() / 2)))
+			setXPosition(1350);
 	}
 
 }
