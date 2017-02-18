@@ -17,7 +17,7 @@ public class IntArena extends GameArena
 
 	/**
 	 * Returns the speed of the movement of the specific instance of the Ball class.
-	 *
+	 * @return the speed of the movement of the specific Ball instance.
 	 */
 
 	public int getSpeed()

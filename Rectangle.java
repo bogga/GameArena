@@ -23,16 +23,16 @@ public class Rectangle
                                         // Pure red is 00FF00
                                         // Pure red is 0000FF
 
-	/**
-	 * Obtains the current position of this Rectangle.
-	 * @return the X coordinate of this Rectangle within the GameArena.
-	 */
 
 	public void changeColour(String newC)
 	{
 		colour = newC;
 	}
 
+	/**
+	 * Obtains the current position of this Rectangle.
+	 * @return the X coordinate of this Rectangle within the GameArena.
+	 */
 	public double getXPosition()
 	{
 		return xPosition;
