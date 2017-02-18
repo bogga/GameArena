@@ -51,11 +51,18 @@ public class IntArena extends GameArena
 	{
 		if (upPressed() && !jumping)
 		{
-			for (int i = jumpHeight; i > -jumpHeight; i--)
+			for (int i = 0; i < jumpHeight; i++)
 			{
 				pause();
 				Driver.s2.update(Driver.s2.getYPosition() - i);
 			}
+
+			for (int i = 0; i < jumpHeight; i++)
+			{
+				pause();
+				Driver.s2.update(Driver.s2.getYPosition() + 1);
+			}
+
 			jumping = true;
 		}
 		if (Driver.s2.getYPosition() == 650)
