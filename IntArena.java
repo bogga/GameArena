@@ -49,6 +49,5 @@ public class IntArena extends GameArena
 	{
 		if (upPressed())
 			Driver.b.setYPosition(Driver.b.getYPosition() - speed);
-
 	}
 }

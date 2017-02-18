@@ -57,7 +57,7 @@ public class Fence extends Rectangle
 		if (getSpeed() >= 30)
 			reached = true;
 		if (getXPosition() > 1300 && reached)
-			setSpeed(rand.nextInt(30) + 1);
+			setSpeed(rand.nextInt(20) + 10);
 	}
 
 }
