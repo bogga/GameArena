@@ -62,9 +62,9 @@ public class Sheep
 		arse.setYPosition(y);
 		abdomen.setYPosition(y);
 		neck.setYPosition(y);
-		mouth.setYPosition(y - (height/2));
+		mouth.setYPosition(y - (height/2) + 10);
 		eyer.setYPosition(y - (height/2));
-		headCover.setYPosition(y - (height/2));
+		headCover.setYPosition(y - (height/2) + 8);
 	}
 
 }

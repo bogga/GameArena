@@ -40,6 +40,7 @@ public class IntArena extends GameArena
 	}
 
 	private Boolean jumping = false;
+	private int jumpHeight = 50;
 
 	/**
 	* Checks for engagement of the jump key and moves the Sheep instance appropriately.
@@ -50,11 +51,14 @@ public class IntArena extends GameArena
 	{
 		if (upPressed() && !jumping)
 		{
-			for (int i = 5; i < -5; i--)
-				Driver.s2.update(i);
+			for (int i = jumpHeight; i > -jumpHeight; i--)
+			{
+				pause();
+				Driver.s2.update(Driver.s2.getYPosition() - i);
+			}
 			jumping = true;
 		}
-		if (Driver.s2.getYPosition() >= 650)
+		if (Driver.s2.getYPosition() == 650)
 			jumping = false;
 	}
 }
