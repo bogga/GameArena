@@ -23,8 +23,6 @@ public class Driver
 		Cloud c2 = new Cloud(1000, 110, arena);
 
 		Fence gate = new Fence(100, 705, 30, 150, "#a3734e", arena);
-		Fence gate1 = new Fence(700, 705, 30, 150, "#a3734e", arena);
-		Fence gate2 = new Fence(1200, 705, 30, 150, "#a3734e", arena);
 
 		while ("hell" != "frozen")
 		{
