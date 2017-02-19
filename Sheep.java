@@ -61,7 +61,7 @@ public class Sheep
 		legFront = new Rectangle(inX+30, inY+30, 10, 50, "BLACK");
 		collsionBox = new Rectangle(inX+5, inY+12, 135, 95, "RED");
 
-		//arena.addRectangle(collsionBox);
+	  arena.addRectangle(collsionBox);
 		arena.addRectangle(legBack);
 		arena.addRectangle(legFront);
 		arena.addBall(arse);
