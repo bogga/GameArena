@@ -2,6 +2,7 @@ public class Driver
 {
 
 	public static Sun b;
+	public static Moon m;
 	public static Rectangle grass;
 	public static Sheep s1;
 	public static Sheep s2;
@@ -10,9 +11,11 @@ public class Driver
 	{
 		IntArena arena = new IntArena(1280, 720);
 		b = new Sun();
+		m = new Moon();
 		Background bg = new Background(arena);
 
 		arena.addBall(b);
+		arena.addBall(m);
 		grass = new Rectangle(640, 720, 1280, 30, "GREEN");
 		arena.addRectangle(grass);
 		s1 = new Sheep(640, 650, 100, 30, "WHITE", arena);
@@ -29,7 +32,8 @@ public class Driver
 		{
 			arena.pause();
 			arena.betterJump();
-			b.arcMove();
+			b.boolArcMove();
+			m.moonBoolArcMove();
 			bg.change();
 			c.move();
 			c1.move();

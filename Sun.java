@@ -7,6 +7,11 @@ public class Sun extends Ball
 		//super(640, 360, 100, "ORANGE");
 	}
 
+	public Sun(String col)
+	{
+		super(-100, 720, 100, col);
+	}
+
 	private static int speed = 1;
 	public static double firstYSpeed = 1;
 	public static double ySpeed = firstYSpeed;
@@ -38,5 +43,22 @@ public class Sun extends Ball
 				setXPosition(-100);
 				setYPosition(720);
 			}
+	}
+
+	public void boolArcMove()
+	{
+		if (Moon.getSM())
+		{
+			setXPosition(getXPosition() + getSpeed());
+			setYPosition(getYPosition() - ySpeed);
+			ySpeed = ySpeed - 0.0014;
+			if (getXPosition() > 1380)
+				{
+					ySpeed = firstYSpeed;
+					setXPosition(-100);
+					setYPosition(720);
+					Moon.setSM(false);
+				}
+		}
 	}
 }
