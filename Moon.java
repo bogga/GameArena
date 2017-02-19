@@ -1,5 +1,7 @@
 public class Moon extends Sun
 {
+  private Ball cresent;
+
   public Moon()
   {
     super("WHITE");
@@ -31,7 +33,8 @@ public class Moon extends Sun
 					setYPosition(720);
 					setSM(true);
 				}
+
+
 		}
 	}
-
 }

@@ -6,16 +6,19 @@ public class Driver
 	public static Rectangle grass;
 	public static Sheep s1;
 	public static Sheep s2;
+	public static Cresent cresent;
 
 	public static void main(String[] args)
 	{
 		IntArena arena = new IntArena(1280, 720);
 		b = new Sun();
 		m = new Moon();
+		cresent = new Cresent();
 		Background bg = new Background(arena);
 
 		arena.addBall(b);
 		arena.addBall(m);
+		arena.addBall(cresent);
 		grass = new Rectangle(640, 720, 1280, 30, "GREEN");
 		arena.addRectangle(grass);
 		s1 = new Sheep(640, 650, 100, 30, "WHITE", arena);
@@ -34,6 +37,7 @@ public class Driver
 			arena.betterJump();
 			b.boolArcMove();
 			m.moonBoolArcMove();
+			cresent.cresentBoolArcMove();
 			bg.change();
 			c.move();
 			c1.move();
