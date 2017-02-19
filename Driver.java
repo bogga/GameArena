@@ -35,6 +35,7 @@ public class Driver
 			c1.move();
 			c2.move();
 			gate.move();
+			s1.shiftLeft();
 		}
 	}
 }

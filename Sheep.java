@@ -27,6 +27,17 @@ public class Sheep
 		y = newY;
 	}
 
+	public int getXPosition()
+	{
+		return x;
+	}
+
+	public void setXPosition(int newX)
+	{
+		x = newX;
+	}
+
+
 	public Sheep(int inX, int inY, int w, int h, java.lang.String col, GameArena arena)
 	{
 		x = inX;
@@ -59,7 +70,7 @@ public class Sheep
 		height = h;
 	}
 
-	public void update(int y)
+	public void updateY(int y)
 	{
 		setYPosition(y);
 		head.setYPosition(y - (height/2));
@@ -73,4 +84,22 @@ public class Sheep
 		headCover.setYPosition(y - (height/2) + 8);
 	}
 
+	public void updateX(int x)
+	{
+		setXPosition(x);
+		head.setXPosition(x + 50);
+		legBack.setXPosition(x - 30);
+		legFront.setXPosition(x + 30);
+		arse.setXPosition(x - 40);
+		abdomen.setXPosition(x);
+		neck.setXPosition(x + 40);
+		mouth.setXPosition(x + 60);
+		eyer.setXPosition(x + 53);
+		headCover.setXPosition(x + 60);
+	}
+
+	public void shiftLeft()
+	{
+		updateX(getXPosition() - 5);
+	}
 }

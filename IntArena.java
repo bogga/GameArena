@@ -54,7 +54,7 @@ public class IntArena extends GameArena
 			for (int i = -jumpHeight; i <= jumpHeight; i++)
 			{
 				// pause();
-				Driver.s2.update(Driver.s2.getYPosition() + i);
+				Driver.s2.updateY(Driver.s2.getYPosition() + i);
 			}
 			jumping = true;
 		}
@@ -62,7 +62,7 @@ public class IntArena extends GameArena
 			jumping = false;
 	}
 
-	private int jumpCounter = 1;
+	private int jumpCounter = 0;
 
 	public void betterJump()
 	{
@@ -70,8 +70,12 @@ public class IntArena extends GameArena
 			jumping = true;
 		if (jumping)
 		{
-			Driver.s2.update(Driver.s2.getYPosition() - jumpCounter);
+			if (jumpCounter >= 0 && jumpCounter < 15)
+				Driver.s2.updateY(Driver.s2.getYPosition() - 10);
+			if (jumpCounter >= 25 && jumpCounter < 40)
+				Driver.s2.updateY(Driver.s2.getYPosition() + 10);
 			tally();
+			// make it stay in the air for longer
 		}
 		if (Driver.s2.getYPosition() == 650)
 			jumping = false;
@@ -79,13 +83,9 @@ public class IntArena extends GameArena
 
 	public void tally()
 	{
-		if (jumpCounter > 0)
+		if (jumpCounter < 40)
 			jumpCounter++;
-		if (jumpCounter == jumpHeight)
-			jumpCounter = -1;
-		else if (jumpCounter == -jumpHeight)
-			jumpCounter = 1;
-		if (jumpCounter < 0)
-			jumpCounter--;
+		else
+			jumpCounter = 0;
 	}
 }
