@@ -28,7 +28,7 @@ public class Driver
 		while ("hell" != "frozen")
 		{
 			arena.pause();
-			arena.jump();
+			arena.betterJump();
 			b.arcMove();
 			bg.change();
 			c.move();
