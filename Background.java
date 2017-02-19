@@ -16,17 +16,17 @@ public class Background
 
 	public void change()
 	{
-		if (Driver.b.getXPosition() == -100)
+		if (Driver.b.getXPosition() == -90)
 		{
 			col = Color.web("003366");
 			i = 0;
 		}
-		else if (Driver.b.getXPosition() < 640 && i == 200)
+		else if (Driver.b.getXPosition() < 640 && Driver.b.getXPosition() > 0 && i == 200)
 		{
 			col = col.brighter();
 			i = 0;
 		}
-		else if (Driver.b.getXPosition() < 1380 && i == 200)
+		else if (Driver.b.getXPosition() < 1380 && Driver.b.getXPosition() > 0 && i == 200)
 		{
 				col = col.darker();
 				i = 0;
