@@ -6,7 +6,7 @@
  * @see Ball
  * @see Background
  *
- * @author Adam Bogg, Harry Almond
+ * @author Harry Almond, Adam Bogg
  */
 
 public class Sun extends Ball

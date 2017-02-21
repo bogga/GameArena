@@ -61,15 +61,14 @@ public class Sheep
 		neck = new Ball(inX+40, inY, 20, col);
 		legBack = new Rectangle(inX-30, inY+30, 10, 50, "BLACK");
 		legFront = new Rectangle(inX+30, inY+30, 10, 50, "BLACK");
-		collisionBox = new Rectangle(inX+5, inY+12, 135, 95, "RED");
-		collisionBoxLegs = new Rectangle (inX-1, inY+30, 70, 50, "BLUE");
+		collisionBox = new Rectangle(inX+5, inY, 135, 60, "RED");
+		collisionBoxLegs = new Rectangle (inX, inY+30, 72, 50, "BLUE");
 
 
 	  arena.addRectangle(collisionBox);
-
+	  arena.addRectangle(collisionBoxLegs);
 		arena.addRectangle(legBack);
 		arena.addRectangle(legFront);
-		arena.addRectangle(collisionBoxLegs);
 		arena.addBall(arse);
 		arena.addBall(abdomen);
 		arena.addBall(neck);
@@ -95,7 +94,7 @@ public class Sheep
 		headCover.setYPosition(y - (height/2) + 8);
 		collisionBox.setYPosition(y-(height/2)+12);
 		collisionBoxLegs.setYPosition(y-(height/2)+12);
-		collisionBox.setYPosition(y + 12);
+		collisionBox.setYPosition(y);
 		collisionBoxLegs.setYPosition(y + 30);
 	}
 
@@ -112,7 +111,7 @@ public class Sheep
 		eyer.setXPosition(x + 53);
 		headCover.setXPosition(x + 60);
 		collisionBox.setXPosition(x + 5);
-		collisionBoxLegs.setXPosition(x - 1);
+		collisionBoxLegs.setXPosition(x);
 	}
 
 	public void shiftLeft()
