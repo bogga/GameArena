@@ -12,7 +12,9 @@ public class Sheep
 	private Ball neck;
 	private Rectangle legBack;
 	private Rectangle legFront;
-	private Rectangle collsionBox;
+	private Rectangle collisionBox;
+	private Rectangle collisionBoxLegs;
+
 
 	private int height;
 
@@ -59,11 +61,15 @@ public class Sheep
 		neck = new Ball(inX+40, inY, 20, col);
 		legBack = new Rectangle(inX-30, inY+30, 10, 50, "BLACK");
 		legFront = new Rectangle(inX+30, inY+30, 10, 50, "BLACK");
-		collsionBox = new Rectangle(inX+5, inY+12, 135, 95, "RED");
+		collisionBox = new Rectangle(inX+5, inY+12, 135, 95, "RED");
+		collisionBoxLegs = new Rectangle (inX-1, inY+30, 70, 50, "BLUE");
 
-	  arena.addRectangle(collsionBox);
+
+	  arena.addRectangle(collisionBox);
+
 		arena.addRectangle(legBack);
 		arena.addRectangle(legFront);
+		arena.addRectangle(collisionBoxLegs);
 		arena.addBall(arse);
 		arena.addBall(abdomen);
 		arena.addBall(neck);
@@ -87,7 +93,8 @@ public class Sheep
 		mouth.setYPosition(y - (height/2) + 10);
 		eyer.setYPosition(y - (height/2));
 		headCover.setYPosition(y - (height/2) + 8);
-		collsionBox.setYPosition(y-(height/2)+12);
+		collisionBox.setYPosition(y-(height/2)+12);
+		collisionBoxLegs.setYPosition(y-(height/2)+12);
 	}
 
 	public void updateX(int x)
@@ -102,7 +109,8 @@ public class Sheep
 		mouth.setXPosition(x + 60);
 		eyer.setXPosition(x + 53);
 		headCover.setXPosition(x + 60);
-		collsionBox.setXPosition(x+5);
+		collisionBox.setXPosition(x+5);
+		collisionBoxLegs.setXPosition(x+5);
 	}
 
 	public void shiftLeft()
