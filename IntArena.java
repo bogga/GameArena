@@ -88,4 +88,10 @@ public class IntArena extends GameArena
 		else
 			jumpCounter = 0;
 	}
+
+	public void fail()
+	{
+		exit();
+		Driver.setGame(false);
+	}
 }

@@ -8,6 +8,13 @@ public class Driver
 	public static Sheep s2;
 	public static Cresent cresent;
 
+	private static Boolean game = true;
+
+	public void setGame(Boolean in)
+	{
+		game = in;
+	}
+
 	public static void main(String[] args)
 	{
 		IntArena arena = new IntArena(1280, 720);
@@ -31,7 +38,7 @@ public class Driver
 		Fence gate = new Fence(1300, 705, 30, 170, "#a3734e", arena);
 		arena.addRectangle(gate);
 
-		while ("hell" != "frozen")
+		while (game)
 		{
 			arena.pause();
 			arena.betterJump();
