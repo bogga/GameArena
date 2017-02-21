@@ -12,8 +12,8 @@ public class Sheep
 	private Ball neck;
 	private Rectangle legBack;
 	private Rectangle legFront;
-	private Rectangle collisionBox;
-	private Rectangle collisionBoxLegs;
+	public Rectangle collisionBox;
+	public Rectangle collisionBoxLegs;
 
 
 	private int height;

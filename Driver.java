@@ -7,17 +7,18 @@ public class Driver
 	public static Sheep s1;
 	public static Sheep s2;
 	public static Cresent cresent;
+	public static IntArena arena;
 
 	private static Boolean game = true;
 
-	public void setGame(Boolean in)
+	public static void setGame(Boolean in)
 	{
 		game = in;
 	}
 
 	public static void main(String[] args)
 	{
-		IntArena arena = new IntArena(1280, 720);
+		arena = new IntArena(1280, 720);
 		b = new Sun();
 		m = new Moon();
 		cresent = new Cresent();
