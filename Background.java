@@ -1,8 +1,18 @@
 import javafx.scene.paint.*;
 
+/**
+ * This class creates a background for the GameArena.
+ *
+ * It 'reacts' to the x co-ordinates (and through this the y co-ordinates) of the Sun to change shade accordingly.
+ *
+ * @see GameArena
+ * @see Sun
+ *
+ * @author Adam Bogg, Harry Almond
+ */
+
 public class Background
 {
-
 	public SmartRectangle r;
 	int i = 0;
 	//public int col = 003366;
@@ -34,5 +44,4 @@ public class Background
 		r.changeColour(col.toString());
 		i++;
 	}
-
 }
