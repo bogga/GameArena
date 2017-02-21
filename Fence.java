@@ -71,9 +71,9 @@ public class Fence extends Rectangle
 			setSpeed(rand.nextInt(25) + 10);
 	}
 
-	public void collision()
+	public void collision(Sheep s)
 	{
-		if (this.intersects(Sheep.collisionBox) || this.intersects(Sheep.collisionBoxLegs))
+		if (this.intersects(s.collisionBox) || this.intersects(s.collisionBoxLegs))
 			Driver.arena.fail();
 	}
 
