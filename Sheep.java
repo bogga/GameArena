@@ -51,7 +51,7 @@ public class Sheep
 			col = "GRAY";
 		head = new Ball(inX+50, inY-(h/2), 20, "PINK");
 		headCover = new Ball(inX+60, inY-(h/2)+8, 7, "PINK"); //headCover is to make it so facial features can be created
-		mouth = new Ball(inX+60, inY-(h/2)+10, 7, "BLACK");    //i.e. a mouth by using a headCover and a black Ball
+		mouth = new Ball(inX+60, inY-(h/2)+10, 7, "BLACK");   //i.e. a mouth by using a headCover and a black Ball
 		eyer = new Ball(inX+53, inY-(h/2), 3, "BLACK");
 		eyel = new Ball(inX+58, inY-(h/2), 3, "BLACK");
 		arse = new Ball(inX-40, inY, 25, col);

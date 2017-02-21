@@ -6,7 +6,7 @@ public class Fence extends Rectangle
 	private int y;
 	private int w;
 	private int h;
-	private int speed = 5;
+	private int speed = 10;
 	private int numFences = 0;
 	Random rand = new Random();
 	Boolean reached = false;
