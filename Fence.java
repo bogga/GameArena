@@ -1,5 +1,16 @@
 import java.util.Random;
 
+/**
+ * This class extends the Rectangle class.
+ *
+ * The Fence class exists of a Rectangle (and a triangle - planned) to create a picket-fence like shape, over which the user should jump.
+ *
+ * @see Rectangle
+ * @see Sheep
+ *
+ * @author Adam Bogg, Harry Almond
+ */
+
 public class Fence extends Rectangle
 {
 	private int x;

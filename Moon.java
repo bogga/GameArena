@@ -1,3 +1,13 @@
+/**
+ * This class extends the Sun class.
+ *
+ * The Moon class is literally the Sun class but is white.
+ *
+ * @see Sun
+ *
+ * @author Adam Bogg, Harry Almond
+ */
+
 public class Moon extends Sun
 {
   private Ball cresent;
@@ -33,8 +43,6 @@ public class Moon extends Sun
 					setYPosition(720);
 					setSM(true);
 				}
-
-
 		}
 	}
 }

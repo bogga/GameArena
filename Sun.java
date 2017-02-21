@@ -1,3 +1,14 @@
+/**
+ * This class extends the Ball class.
+ *
+ * The Sun class creates an orange ball (the Sun) and the co-ordinates of this dictate the Background's shade.
+ *
+ * @see Ball
+ * @see Background
+ *
+ * @author Adam Bogg, Harry Almond
+ */
+
 public class Sun extends Ball
 {
 
