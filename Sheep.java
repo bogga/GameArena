@@ -95,6 +95,8 @@ public class Sheep
 		headCover.setYPosition(y - (height/2) + 8);
 		collisionBox.setYPosition(y-(height/2)+12);
 		collisionBoxLegs.setYPosition(y-(height/2)+12);
+		collisionBox.setYPosition(y + 12);
+		collisionBoxLegs.setYPosition(y + 30);
 	}
 
 	public void updateX(int x)
@@ -109,8 +111,8 @@ public class Sheep
 		mouth.setXPosition(x + 60);
 		eyer.setXPosition(x + 53);
 		headCover.setXPosition(x + 60);
-		collisionBox.setXPosition(x+5);
-		collisionBoxLegs.setXPosition(x+5);
+		collisionBox.setXPosition(x + 5);
+		collisionBoxLegs.setXPosition(x - 1);
 	}
 
 	public void shiftLeft()
