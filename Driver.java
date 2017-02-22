@@ -52,7 +52,7 @@ public class Driver
 			c2.move();
 			gate.move();
 			s1.shiftLeft();
-		  gatec.collision(s1);
+		  gate.collision(s1);
 		}
 	}
 }
